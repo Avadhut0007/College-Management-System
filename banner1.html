@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <body>
+        
+        <script>
+        banner_array=new Array("Avadhut1.jpg","Avadhut2.jpg","Avadhut3.jpg","Avadhut06.jpg","Avadhut07.jpg");
+        banner=0;
+        function DispBan()
+{
+            if(true)
+
+    {
+            banner++;
+            if(banner==banner_array.length)
+    
+        {
+            banner=0;
+        }
+        document.changeBanner.src=banner_array[banner];
+    }
+} 
+
+</script>
+</head>
+<body>
+    <h4>
+        Banner In JS
+    </h4>
+
+   <img src="Avadhut1.jpg" height="500"  width="800" name="changeBanner"/>
+<br>
+<input type="button" value="next" onclick="DispBan()">
+<input type="button" value="previous" onclick="DispBan()">
+</body>
+</html>
